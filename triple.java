@@ -20,9 +20,12 @@ class triple
 	   {
 		for(int j=i+1;j<n;j++)
 		{
-			if(arr[i]+arr[j]+arr[j+1]==0)
+			for(int k=j+1;k<n;k++)
 			{
-				System.out.println("combination :"+i+" "+arr[i]+arr[j]+arr[j+1]);
+				if(arr[i]+arr[j]+arr[k]==0)
+				{
+					System.out.println("combination :"+arr[i]+" "+arr[j]+" "+arr[k]);
+				}
 			}
 		}
 	   }
